@@ -1,0 +1,90 @@
+ion-content {
+  --background: linear-gradient(to bottom, #0f172a, #1e293b);
+}
+
+h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+ion-toolbar {
+  --background: #0f172a;
+  --color: #ffffff;
+}
+
+ion-title {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+ion-card {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 25px;
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.4),
+    0 0 20px rgba(59,130,246,0.3);
+
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+ion-card-content {
+  color: #38bdf8;
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow:
+    0 0 10px rgba(56,189,248,0.8),
+    0 0 20px rgba(56,189,248,0.4);
+}
+
+ion-button {
+  margin-top: 30px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 16px;
+
+  --background: linear-gradient(135deg, #2563eb, #1d4ed8);
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.35),
+    0 0 15px rgba(37,99,235,0.4);
+
+  text-transform: none;
+}
+
+ion-button:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+
+  ion-card-content {
+    font-size: 56px;
+  }
+
+  .relogio {
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+
+}
+

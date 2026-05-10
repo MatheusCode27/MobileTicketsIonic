@@ -1,17 +1,59 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 1
+      Mobile Tickets
     </ion-title>
+    <p class="relogio">
+      {{ ticketService.horaAtual }}
+    </p>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <div class="container">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <h2>Emitir Senha</h2>
+
+    <ion-button expand="block" color="danger" (click)="emitirSenha('SP')">
+      Senha Prioritária (SP)
+    </ion-button>
+
+    <ion-button expand="block" color="success" (click)="emitirSenha('SG')">
+      Senha Geral (SG)
+    </ion-button>
+
+    <ion-button expand="block" color="warning" (click)="emitirSenha('SE')">
+      Senha Exames (SE)
+    </ion-button>
+
+    <h2>Fila Prioritaria</h2>
+
+    <ion-list>
+      <ion-item *ngFor="let senha of ticketService.filaSP">
+        {{ senha }}
+      </ion-item>
+    </ion-list>
+
+
+    <h2>Fila Geral</h2>
+
+    <ion-list>
+      <ion-item *ngFor="let senha of ticketService.filaSG">
+        {{ senha }}
+      </ion-item>
+    </ion-list>
+
+    <h2>Fila Exames</h2>
+
+    <ion-list>
+      <ion-item *ngFor="let senha of ticketService.filaSE">
+        {{ senha }}
+      </ion-item>
+    </ion-list>
+  </div>
+
+
+
+
+
 </ion-content>

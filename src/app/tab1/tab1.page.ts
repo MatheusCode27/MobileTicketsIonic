@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TicketService } from '../services/ticket';
 
 @Component({
   selector: 'app-tab1',
@@ -8,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(public ticketService: TicketService) {}
+
+  emitirSenha(tipo: string) {
+    this.ticketService.emitirSenha(tipo);
+  }
 
 }
