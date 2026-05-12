@@ -32,6 +32,7 @@ Sistema mobile de controle de atendimento desenvolvido com Ionic + Angular.
 ```bash
 npm install
 ionic serve
+```
 
 ## Imagens do Projeto
 
