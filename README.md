@@ -82,6 +82,8 @@ ionic serve
 ### Tela Painel
 
 ![Painel](screenshots/painel.png)
+![Painel2](screenshots/painel2.png)
+![Painel3](screenshots/painel3.png)
 
 ## Autores
 
