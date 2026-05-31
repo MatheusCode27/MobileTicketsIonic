@@ -92,6 +92,8 @@ ionic serve
 * Humberto Gueiros
 * José Heitor
 
-Disciplina: Desenvolvimento para Dispositivos Móveis
-Curso: Análise e Desenvolvimento de Sistemas
-Instituição: Uninassau Graças
+### Informações Acadêmicas
+
+- **Disciplina:** Desenvolvimento para Dispositivos Móveis
+- **Curso:** Análise e Desenvolvimento de Sistemas
+- **Instituição:** UNINASSAU Graças
