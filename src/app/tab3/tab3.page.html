@@ -1,12 +1,12 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-title>
-  Painel
-</ion-title>
+      Painel
+    </ion-title>
 
-<p class="relogio">
-  {{ ticketService.horaAtual }}
-</p>
+    <p class="relogio">
+      {{ ticketService.horaAtual }}
+    </p>
   </ion-toolbar>
 </ion-header>
 
@@ -15,10 +15,10 @@
   <h2>Senha Atual</h2>
 
   <ion-card class="painel-card">
-  <ion-card-content class="senha-atual">
-    {{ ticketService.senhaAtual }}
-  </ion-card-content>
-</ion-card>
+    <ion-card-content class="senha-atual">
+      {{ ticketService.senhaAtual }}
+    </ion-card-content>
+  </ion-card>
 
   <h2>Últimas Chamadas</h2>
 
@@ -27,5 +27,62 @@
       {{ senha }}
     </ion-item>
   </ion-list>
+
+  <h2>Relatório</h2>
+
+  <ion-card>
+    <ion-card-content>
+
+      <p>Total Emitidas: {{ ticketService.totalEmitidas }}</p>
+      <p>Total Atendidas: {{ ticketService.totalAtendidas }}</p>
+      <p>Total Descartadas: {{ ticketService.totalDescartadas }}</p>
+      <hr>
+
+      <p>SP Emitidas: {{ ticketService.emitidasSP }}</p>
+      <p>SP Atendidas: {{ ticketService.atendidasSP }}</p>
+
+      <p>SG Emitidas: {{ ticketService.emitidasSG }}</p>
+      <p>SG Atendidas: {{ ticketService.atendidasSG }}</p>
+
+      <p>SE Emitidas: {{ ticketService.emitidasSE }}</p>
+      <p>SE Atendidas: {{ ticketService.atendidasSE }}</p>
+
+      <hr>
+
+      <h3>Tempo Médio (TM)</h3>
+
+      <p>TM Senha Prioritária (SP): {{ ticketService.tmSP }} minutos</p>
+
+      <p>TM Senha Geral (SG): {{ ticketService.tmSG }} minutos</p>
+
+      <p>TM Senha Exames (SE): {{ ticketService.tmSE }} minuto</p>
+
+
+      <h2>Histórico Completo</h2>
+
+      <ion-list>
+        <ion-item *ngFor="let senha of ticketService.historicoChamadas">
+          {{ senha }}
+        </ion-item>
+      </ion-list>
+
+      <h2>Relatório Detalhado</h2>
+
+      <ion-list>
+        <ion-item *ngFor="let item of ticketService.historicoDetalhado">
+          {{ item }}
+        </ion-item>
+      </ion-list>
+
+      <h2>Senhas Descartadas</h2>
+
+      <ion-list>
+        <ion-item *ngFor="let senha of ticketService.senhasDescartadas">
+          {{ senha }}
+        </ion-item>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
