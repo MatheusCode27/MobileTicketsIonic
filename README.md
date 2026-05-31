@@ -88,7 +88,9 @@ ionic serve
 ## Autores
 
 * Matheus Filipe
-* Pedro Venâncio
+* Pedro Henrique Venâncio
 * Humberto Gueiros
+* José Heitor
+
 
 Curso de Análise e Desenvolvimento de Sistemas - UNINASSAU
